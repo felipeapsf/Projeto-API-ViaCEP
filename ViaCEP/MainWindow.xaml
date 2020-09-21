@@ -1,0 +1,38 @@
+﻿<Window x:Class="ViaCEP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViaCEP"
+        mc:Ignorable="d"
+        Title="ViaCEP - Webservice" Height="520" Width="300">
+    <Grid Height="520" VerticalAlignment="Stretch" HorizontalAlignment="Center">
+        <Button x:Name="btn_consulta" Content="Consultar ViaCEP" HorizontalAlignment="Center" Margin="10,40,0,0" VerticalAlignment="Top" Width="240" Click="btn_consulta_Click"/>
+        <Label x:Name="label_cep" Content="CEP:" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_logradouro" Content="Logradouro:" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_complemento" Content="Complemento:" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_bairro" Content="Bairro:" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_localidade" Content="Localidade:" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_uf" Content="UF:" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_ibge" Content="IBGE:" HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_gia" Content="GIA:" HorizontalAlignment="Left" Margin="10,352,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_ddd" Content="DDD:" HorizontalAlignment="Left" Margin="10,383,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_siafi" Content="SIAFI:" HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_cep" HorizontalAlignment="Left" Margin="130,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_logradouro" HorizontalAlignment="Left" Margin="130,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_complemento" HorizontalAlignment="Left" Margin="130,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_bairro" HorizontalAlignment="Left" Margin="130,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_localidade" HorizontalAlignment="Left" Margin="130,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_uf" HorizontalAlignment="Left" Margin="130,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_ibge" HorizontalAlignment="Left" Margin="130,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_gia" HorizontalAlignment="Left" Margin="130,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_ddd" HorizontalAlignment="Left" Margin="130,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_siafi" HorizontalAlignment="Left" Margin="130,422,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Button x:Name="btn_sair" Content="SAIR" HorizontalAlignment="Center" Margin="10,450,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.514,0.628" Click="btn_sair_Click" Width="240"/>
+        <TextBox x:Name="textbox_cep" Margin="130,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" MaxLength="8" HorizontalAlignment="Left" Width="120"/>
+        <Button x:Name="btn_gravar" Content="Gravar" HorizontalAlignment="Center" Margin="10,100,0,0" VerticalAlignment="Top" Width="240" Click="btn_gravar_Click"/>
+        <Label Content="CEP:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25" Width="50"/>
+        <Button x:Name="btn_consulta_db" Content="Consultar Data Base" HorizontalAlignment="Center" Margin="10,70,0,0" VerticalAlignment="Top" Width="240" Click="btn_consulta_db_Click"/>
+
+    </Grid>
+</Window>
